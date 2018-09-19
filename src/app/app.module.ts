@@ -47,6 +47,7 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from './app.component';
 import {TreeChecklistExample} from '../app/tree-checklist-example/tree-checklist-example.component';
+import {UserService} from "./services/user.service";
 
 @NgModule({
   exports: [
@@ -104,7 +105,7 @@ export class DemoMaterialModule {}
   entryComponents: [AppComponent],
   declarations: [AppComponent, TreeChecklistExample],
   bootstrap: [AppComponent],
-  providers: []
+  providers: [UserService]
 })
 export class AppModule {}
 
