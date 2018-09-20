@@ -48,6 +48,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {AppComponent} from './app.component';
 import {TreeChecklistExample} from '../app/tree-checklist-example/tree-checklist-example.component';
 import {UserService} from "./services/user.service";
+import { CollapsibleModule } from 'angular2-collapsible';
+import {CollapsibleTableComponent} from '../app/collapsible-table/collapsible-table.component';
 
 @NgModule({
   exports: [
@@ -101,9 +103,10 @@ export class DemoMaterialModule {}
     DemoMaterialModule,
     MatNativeDateModule,
     ReactiveFormsModule,
+    CollapsibleModule
   ],
   entryComponents: [AppComponent],
-  declarations: [AppComponent, TreeChecklistExample],
+  declarations: [AppComponent, TreeChecklistExample, CollapsibleTableComponent],
   bootstrap: [AppComponent],
   providers: [UserService]
 })
